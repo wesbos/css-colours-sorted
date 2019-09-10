@@ -1,0 +1,15 @@
+{
+  "name": "colors-sorted",
+  "version": "1.0.0",
+  "description": "",
+  "main": "colors.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hex-to-hsl": "^1.0.2",
+    "parcel-bundler": "^1.12.3"
+  }
+}

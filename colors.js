@@ -1,4 +1,5 @@
 import hexToHSL from 'hex-to-hsl';
+import {sortFn as sortColors} from 'color-sorter';
 
 export const colors = {
   black: '#000000',
@@ -197,4 +198,4 @@ export const colorsBySaturation = [...colorsArray].sort((a, b) => b.hsl[1] - a.h
 export const colorsByLightness = [...colorsArray].sort((a, b) => b.hsl[2] - a.hsl[2]);
 export const colorsByAll = [...colorsArray].sort((a, b) => b.hsl[0] - a.hsl[0]).sort((a, b) => b.hsl[1] - a.hsl[1]).sort((a, b) => b.hsl[2] - a.hsl[2]);
 export const colorsByVowels = [...colorsArray].sort((a, b) => b.vowels - a.vowels);
-
+export const colorsByHSL = [...colorsArray].sort((a, b) => sortColors(a.hex, b.hex));

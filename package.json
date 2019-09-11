@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "color-sorter": "^4.0.0",
     "hex-to-hsl": "^1.0.2",
     "parcel-bundler": "^1.12.3"
   }

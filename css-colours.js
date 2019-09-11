@@ -1,4 +1,4 @@
-import { colorsByLength, isValidColor, isDark, colorsByHue, colorsBySaturation, colorsByLightness, colorsByAll, colorsByVowels } from './colors';
+import { colorsByLength, isValidColor, isDark, colorsByHue, colorsBySaturation, colorsByLightness, colorsByAll, colorsByVowels, colorsByHSL } from './colors';
 
 function displayColoursBy(colorsToDisplay, el, toShow = 'hsl') {
   const spans = colorsToDisplay
@@ -34,4 +34,4 @@ displayColoursBy(colorsByLightness, document.querySelector('.by-lightness'));
 displayColoursBy(colorsByAll, document.querySelector('.by-all'));
 displayGradient(colorsByVowels, document.querySelector('.by-gradient'));
 displayColoursBy(colorsByVowels, document.querySelector('.by-vowels'), 'vowels');
-
+displayColoursBy(colorsByHSL, document.querySelector(".by-hsl"));
